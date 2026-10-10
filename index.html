@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Records and Document Management - Educational website for office collaboration and productivity tools">
+    <title>Digital Records & Document Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">📋</span>
+                <span>Digital Records</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#records" class="nav-link">Digital Records</a></li>
+                <li><a href="#productivity" class="nav-link">Productivity Tools</a></li>
+                <li><a href="#collaboration" class="nav-link">Collaboration</a></li>
+                <li><a href="#project-management" class="nav-link">Project Management</a></li>
+                <li><a href="#comparison" class="nav-link">Comparison</a></li>
+                <li><a href="#security" class="nav-link">Security</a></li>
+                <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Digital Records and Document Management</h1>
+                <p class="hero-subtitle">Work Smarter. Collaborate Better. Manage Digital Information Efficiently.</p>
+                <p class="hero-description">Master the tools and practices that modern organizations use to organize, secure, and share digital information effectively.</p>
+                <button class="cta-button" onclick="scrollToSection('about')">Explore Now</button>
+            </div>
+            <div class="hero-illustration">
+                <svg class="hero-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="50" y="80" width="300" height="240" rx="15" fill="#E3F2FD" stroke="#1976D2" stroke-width="3"/>
+                    <rect x="70" y="100" width="260" height="40" rx="5" fill="#1976D2" opacity="0.1"/>
+                    <line x1="70" y1="160" x2="330" y2="160" stroke="#1976D2" stroke-width="2" opacity="0.3"/>
+                    <line x1="70" y1="190" x2="330" y2="190" stroke="#1976D2" stroke-width="2" opacity="0.3"/>
+                    <line x1="70" y1="220" x2="330" y2="220" stroke="#1976D2" stroke-width="2" opacity="0.3"/>
+                    <circle cx="100" cy="290" r="8" fill="#00796B"/>
+                    <circle cx="160" cy="290" r="8" fill="#00796B"/>
+                    <circle cx="220" cy="290" r="8" fill="#00796B"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">What is Digital Records Management?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📄</div>
+                    <h3>What Are Digital Records?</h3>
+                    <p>Digital records are documents, files, and information stored electronically. They include word documents, spreadsheets, emails, PDFs, images, and more.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🔒</div>
+                    <h3>Why Manage Them?</h3>
+                    <p>Proper management ensures information is organized, secure, accessible, and compliant with legal requirements. It improves productivity and protects sensitive data.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🛠️</div>
+                    <h3>Modern Tools</h3>
+                    <p>Google Workspace, Microsoft 365, and other platforms provide integrated solutions for creating, organizing, collaborating on, and managing digital records.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">👥</div>
+                    <h3>Team Collaboration</h3>
+                    <p>Digital tools enable teams to work together in real-time, share files securely, communicate effectively, and track progress on shared projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Digital Records Section -->
+    <section id="records" class="records">
+        <div class="container">
+            <h2 class="section-title">Types of Digital Records</h2>
+            <p class="section-description">Understanding different types of digital records helps you organize and manage information effectively.</p>
+            
+            <div class="records-container">
+                <div class="record-type">
+                    <div class="record-icon">📝</div>
+                    <h3>Word Documents</h3>
+                    <p>Text documents created in Microsoft Word, Google Docs, or similar tools. Used for reports, essays, memos, and written communication.</p>
+                </div>
+                <div class="record-type">
+                    <div class="record-icon">📕</div>
+                    <h3>PDF Files</h3>
+                    <p>Portable Document Format files that preserve formatting. Ideal for forms, reports, and documents that should not be edited after creation.</p>
+                </div>
+                <div class="record-type">
+                    <div class="record-icon">📊</div>
+                    <h3>Spreadsheets</h3>
+                    <p>Files created in Microsoft Excel or Google Sheets containing organized data, calculations, and analysis. Essential for financial records and data management.</p>
+                </div>
+                <div class="record-type">
+                    <div class="record-icon">🖼️</div>
+                    <h3>Digital Images</h3>
+                    <p>Photos, screenshots, and image files stored digitally. Important for documentation, visual records, and media archives.</p>
+                </div>
+                <div class="record-type">
+                    <div class="record-icon">✉️</div>
+                    <h3>Email Records</h3>
+                    <p>Electronic messages and conversations. Important for business communication records and maintaining communication history.</p>
+                </div>
+                <div class="record-type">
+                    <div class="record-icon">📋</div>
+                    <h3>Online Forms</h3>
+                    <p>Data collected through Google Forms, Microsoft Forms, or web forms. Used for surveys, registrations, and data collection.</p>
+                </div>
+            </div>
+
+            <!-- Interactive Digital Records Demo -->
+            <div class="demo-section">
+                <h3>Interactive Digital Records Demo</h3>
+                <p class="demo-note"><strong>Note:</strong> This demonstration stores example metadata in your browser only. No actual documents are uploaded to cloud storage.</p>
+                
+                <div class="demo-controls">
+                    <div class="search-bar">
+                        <input type="text" id="recordSearch" placeholder="Search records by title or type..." class="search-input">
+                    </div>
+                    
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="Document">Documents</button>
+                        <button class="filter-btn" data-filter="Spreadsheet">Spreadsheets</button>
+                        <button class="filter-btn" data-filter="Image">Images</button>
+                        <button class="filter-btn" data-filter="Email">Emails</button>
+                    </div>
+                </div>
+
+                <div class="add-record-form">
+                    <h4>Add a Sample Record</h4>
+                    <div class="form-row">
+                        <input type="text" id="recordTitle" placeholder="Record title" class="form-input">
+                        <select id="recordType" class="form-input">
+                            <option value="">Select Type</option>
+                            <option value="Document">Document</option>
+                            <option value="Spreadsheet">Spreadsheet</option>
+                            <option value="Image">Image</option>
+                            <option value="Email">Email</option>
+                            <option value="PDF">PDF</option>
+                        </select>
+                        <input type="text" id="recordOwner" placeholder="Owner name" class="form-input">
+                        <button id="addRecordBtn" class="button-primary">Add Record</button>
+                    </div>
+                </div>
+
+                <div id="recordsList" class="records-list">
+                    <!-- Records will be populated here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productivity Tools Section -->
+    <section id="productivity" class="productivity">
+        <div class="container">
+            <h2 class="section-title">Productivity Tools</h2>
+            <p class="section-description">Essential applications that help individuals and teams create and manage digital information.</p>
+            
+            <div class="tools-grid">
+                <div class="tool-card">
+                    <h3>Google Workspace</h3>
+                    <p class="tool-description">A suite of cloud-based productivity apps including Docs, Sheets, Slides, and more.</p>
+                    <a href="https://workspace.google.com" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Google Workspace →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Microsoft 365</h3>
+                    <p class="tool-description">Comprehensive productivity suite including Word, Excel, PowerPoint, and Outlook.</p>
+                    <a href="https://www.microsoft.com/microsoft-365" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Microsoft 365 →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Google Drive</h3>
+                    <p class="tool-description">Cloud storage for files with sharing and collaboration capabilities.</p>
+                    <a href="https://www.google.com/drive/" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Google Drive →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Microsoft OneDrive</h3>
+                    <p class="tool-description">Cloud storage integrated with Microsoft 365 for file backup and sync.</p>
+                    <a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" target="_blank" rel="noopener noreferrer" class="tool-link">Visit OneDrive →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Google Sheets</h3>
+                    <p class="tool-description">Spreadsheet application for data analysis, calculations, and collaborative data management.</p>
+                    <a href="https://sheets.google.com" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Google Sheets →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Microsoft Excel</h3>
+                    <p class="tool-description">Powerful spreadsheet software for financial analysis and data visualization.</p>
+                    <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Excel →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Google Calendar</h3>
+                    <p class="tool-description">Schedule management and calendar sharing for team coordination.</p>
+                    <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Google Calendar →</a>
+                </div>
+                <div class="tool-card">
+                    <h3>Microsoft Outlook</h3>
+                    <p class="tool-description">Email and calendar management integrated with Microsoft 365.</p>
+                    <a href="https://outlook.live.com" target="_blank" rel="noopener noreferrer" class="tool-link">Visit Outlook →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration Section -->
+    <section id="collaboration" class="collaboration">
+        <div class="container">
+            <h2 class="section-title">Team Collaboration</h2>
+            <p class="section-description">Tools that enable real-time teamwork and effective communication.</p>
+            
+            <div class="collaboration-content">
+                <div class="collab-text">
+                    <h3>Why Collaboration Tools Matter</h3>
+                    <p>Modern teams work across different locations and time zones. Collaboration tools enable:</p>
+                    <ul class="collab-list">
+                        <li>✓ Real-time co-editing of documents</li>
+                        <li>✓ Instant messaging and video conferencing</li>
+                        <li>✓ File sharing with permission controls</li>
+                        <li>✓ Comment threads and feedback</li>
+                        <li>✓ Version history and change tracking</li>
+                        <li>✓ Task assignment and progress tracking</li>
+                    </ul>
+                </div>
+                <div class="collab-tools">
+                    <div class="collab-card">
+                        <h4>Google Meet</h4>
+                        <p>Video conferencing integrated with Google Workspace</p>
+                    </div>
+                    <div class="collab-card">
+                        <h4>Microsoft Teams</h4>
+                        <p>Unified communication platform included with Microsoft 365. <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software" target="_blank" rel="noopener noreferrer">Learn more →</a></p>
+                    </div>
+                    <div class="collab-card">
+                        <h4>Slack</h4>
+                        <p>Team messaging and collaboration platform</p>
+                    </div>
+                    <div class="collab-card">
+                        <h4>Email Systems</h4>
+                        <p>Gmail and Outlook for professional communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Management Section -->
+    <section id="project-management" class="project-management">
+        <div class="container">
+            <h2 class="section-title">Project Management</h2>
+            <p class="section-description">Tools for organizing tasks, tracking progress, and managing team workflows.</p>
+
+            <!-- Interactive Kanban Board -->
+            <div class="kanban-demo">
+                <h3>Interactive Kanban Board Demo</h3>
+                <p class="demo-note"><strong>Educational Simulation:</strong> This board demonstrates Kanban methodology. It is not an actual integration with Trello, Asana, or Microsoft Planner.</p>
+                
+                <div class="kanban-board" id="kanbanBoard">
+                    <div class="kanban-column" data-status="todo">
+                        <div class="column-header">
+                            <h4>To Do</h4>
+                            <span class="task-count" id="todoCount">0</span>
+                        </div>
+                        <div class="tasks-list" id="todoList"></div>
+                    </div>
+                    <div class="kanban-column" data-status="inprogress">
+                        <div class="column-header">
+                            <h4>In Progress</h4>
+                            <span class="task-count" id="inprogressCount">0</span>
+                        </div>
+                        <div class="tasks-list" id="inprogressList"></div>
+                    </div>
+                    <div class="kanban-column" data-status="completed">
+                        <div class="column-header">
+                            <h4>Completed</h4>
+                            <span class="task-count" id="completedCount">0</span>
+                        </div>
+                        <div class="tasks-list" id="completedList"></div>
+                    </div>
+                </div>
+
+                <div class="kanban-controls">
+                    <div class="add-task-form">
+                        <input type="text" id="taskTitle" placeholder="Enter task title..." class="form-input">
+                        <select id="taskPriority" class="form-input">
+                            <option value="Low">Low Priority</option>
+                            <option value="Medium" selected>Medium Priority</option>
+                            <option value="High">High Priority</option>
+                        </select>
+                        <button id="addTaskBtn" class="button-primary">Add Task</button>
+                    </div>
+                    <button id="resetBoardBtn" class="button-secondary">Reset Board</button>
+                </div>
+            </div>
+
+            <!-- Project Management Tools -->
+            <div class="pm-tools">
+                <h3>Popular Project Management Tools</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h4>Trello</h4>
+                        <p>Visual project management using Kanban boards. <a href="https://trello.com" target="_blank" rel="noopener noreferrer">Visit Trello →</a></p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Asana</h4>
+                        <p>Comprehensive work management platform. <a href="https://asana.com" target="_blank" rel="noopener noreferrer">Visit Asana →</a></p>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Microsoft Planner</h4>
+                        <p>Task management integrated with Microsoft 365.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="comparison">
+        <div class="container">
+            <h2 class="section-title">Tool Comparison</h2>
+            <p class="section-description">Compare popular digital tools to find the best fit for your needs.</p>
+            
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Purpose</th>
+                            <th>Typical Use Case</th>
+                            <th>Collaboration Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Google Docs</strong></td>
+                            <td>Word processing</td>
+                            <td>Letters, reports, essays</td>
+                            <td>Real-time co-editing, comments, suggestions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Microsoft Word</strong></td>
+                            <td>Word processing</td>
+                            <td>Professional documents, templates</td>
+                            <td>Co-authoring in Microsoft 365, track changes</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Sheets</strong></td>
+                            <td>Spreadsheets</td>
+                            <td>Data analysis, budgets, schedules</td>
+                            <td>Real-time collaboration, shared editing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Microsoft Excel</strong></td>
+                            <td>Spreadsheets</td>
+                            <td>Financial analysis, complex calculations</td>
+                            <td>Co-authoring, shared workbooks</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Drive</strong></td>
+                            <td>Cloud storage</td>
+                            <td>File backup, file sharing</td>
+                            <td>Granular sharing controls, team folders</td>
+                        </tr>
+                        <tr>
+                            <td><strong>OneDrive</strong></td>
+                            <td>Cloud storage</td>
+                            <td>File sync, backup, sharing</td>
+                            <td>SharePoint integration, version control</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Calendar</strong></td>
+                            <td>Schedule management</td>
+                            <td>Team calendars, event scheduling</td>
+                            <td>Calendar sharing, meeting coordination</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Outlook</strong></td>
+                            <td>Email & calendar</td>
+                            <td>Professional email, appointments</td>
+                            <td>Calendar sharing, meeting scheduling</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Trello</strong></td>
+                            <td>Project management</td>
+                            <td>Kanban boards, task tracking</td>
+                            <td>Team boards, card assignments, comments</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Asana</strong></td>
+                            <td>Work management</td>
+                            <td>Complex projects, workflows</td>
+                            <td>Team collaboration, portfolio views</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Microsoft Planner</strong></td>
+                            <td>Task management</td>
+                            <td>Team tasks, project tracking</td>
+                            <td>Microsoft 365 integration, team tasks</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2 class="section-title">Digital Security & Best Practices</h2>
+            <p class="section-description">Protecting your digital records requires awareness and best practices.</p>
+
+            <!-- Interactive Security Checklist -->
+            <div class="security-checklist">
+                <h3>Security Checklist</h3>
+                <p class="demo-note">Track your security practices with this interactive checklist.</p>
+                
+                <div class="checklist-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <p class="progress-text">
+                        <span id="completedCount">0</span> / <span id="totalCount">10</span> practices implemented
+                    </p>
+                </div>
+
+                <div class="checklist-items">
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check1" class="checklist-checkbox" data-item="1">
+                        <label for="check1">
+                            <strong>Strong Passwords</strong>
+                            <p>Use unique, complex passwords (12+ characters, mix of letters, numbers, symbols) for each account.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check2" class="checklist-checkbox" data-item="2">
+                        <label for="check2">
+                            <strong>Multi-Factor Authentication (MFA)</strong>
+                            <p>Enable MFA on all important accounts for an additional security layer beyond passwords.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check3" class="checklist-checkbox" data-item="3">
+                        <label for="check3">
+                            <strong>Regular Backups</strong>
+                            <p>Maintain backups of critical files in multiple locations to prevent data loss.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check4" class="checklist-checkbox" data-item="4">
+                        <label for="check4">
+                            <strong>Organized File Names</strong>
+                            <p>Use clear, descriptive file names and folder structures to easily locate and manage records.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check5" class="checklist-checkbox" data-item="5">
+                        <label for="check5">
+                            <strong>Sharing Permissions</strong>
+                            <p>Review and restrict file sharing permissions. Share only with necessary people and set appropriate access levels.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check6" class="checklist-checkbox" data-item="6">
+                        <label for="check6">
+                            <strong>Limited Access</strong>
+                            <p>Principle of least privilege: Users should only have access to files and systems they need.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check7" class="checklist-checkbox" data-item="7">
+                        <label for="check7">
+                            <strong>Software Updates</strong>
+                            <p>Keep your operating system, browsers, and applications updated with the latest security patches.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check8" class="checklist-checkbox" data-item="8">
+                        <label for="check8">
+                            <strong>Suspicious Links</strong>
+                            <p>Be cautious with unexpected links and downloads. Verify sender identity before opening suspicious messages.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check9" class="checklist-checkbox" data-item="9">
+                        <label for="check9">
+                            <strong>Privacy Policies</strong>
+                            <p>Review privacy policies of tools and services you use to understand how your data is handled.</p>
+                        </label>
+                    </div>
+                    <div class="checklist-item">
+                        <input type="checkbox" id="check10" class="checklist-checkbox" data-item="10">
+                        <label for="check10">
+                            <strong>Record Retention</strong>
+                            <p>Establish and follow record retention schedules. Securely delete records when no longer needed.</p>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="resetChecklistBtn" class="button-secondary">Reset Checklist</button>
+            </div>
+
+            <!-- Best Practices -->
+            <div class="best-practices">
+                <h3>Key Security Principles</h3>
+                <div class="practices-grid">
+                    <div class="practice-card">
+                        <h4>🔐 Confidentiality</h4>
+                        <p>Ensure sensitive information is only accessible to authorized individuals through access controls and encryption.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h4>✓ Integrity</h4>
+                        <p>Maintain accuracy and completeness of records. Prevent unauthorized modifications through version control and audit trails.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h4>🕐 Availability</h4>
+                        <p>Keep records accessible to authorized users when needed. Maintain backups and disaster recovery procedures.</p>
+                    </div>
+                    <div class="practice-card">
+                        <h4>📋 Compliance</h4>
+                        <p>Follow legal and regulatory requirements for handling records in your organization or industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="conclusion">
+        <div class="container">
+            <h2 class="section-title">Conclusion</h2>
+            
+            <div class="conclusion-content">
+                <p class="conclusion-text">
+                    Digital records and document management are essential parts of modern productivity and office collaboration. Tools such as Google Workspace, Microsoft 365, spreadsheets, calendars, and project management applications help individuals and organizations create documents, organize information, manage tasks, communicate effectively, and work together. However, these tools must be used responsibly, with appropriate security, backups, and access controls. By choosing suitable digital tools and following good management practices, we can improve productivity, save time, and protect important information.
+                </p>
+                
+                <div class="closing-banner">
+                    <h3>ORGANIZE BETTER. COLLABORATE SMARTER. ACHIEVE MORE.</h3>
+                </div>
+
+                <div class="conclusion-cta">
+                    <p>Thank you for exploring Digital Records and Document Management.</p>
+                    <button class="button-primary" onclick="scrollToSection('home')">Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Digital Records & Document Management Educational Website. Created for educational purposes.</p>
+            <p>This website is hosted on GitHub Pages and uses no external APIs or paid services.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
